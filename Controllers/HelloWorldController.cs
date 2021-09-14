@@ -11,9 +11,9 @@ namespace MvcMovie.Controllers
         }
 
         // HelloWorld/Welcome にアクセスしたときの処理
-        public string Welcome(string name, int age = 1)
+        public string Welcome(string name, int Id = 1)
         {
-            return $"名前：{name}さん, 年齢：{age}歳";
+            return $"名前：{name}さん, ID：{Id}";
         }
     }
 }
