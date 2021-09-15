@@ -11,9 +11,12 @@ namespace MvcMovie.Controllers
         }
 
         // HelloWorld/Welcome にアクセスしたときの処理
-        public string Welcome(string name, int Id = 1)
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            return $"名前：{name}さん, ID：{Id}";
+            ViewData["Message"] = $"こんにちは！{name}さん";
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }
