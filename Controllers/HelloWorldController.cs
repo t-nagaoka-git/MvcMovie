@@ -5,9 +5,9 @@ namespace MvcMovie.Controllers
     public class HelloWorldController : Controller
     {
         // HelloWorld にアクセスしたときの処理
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello World!";
+            return View();
         }
 
         // HelloWorld/Welcome にアクセスしたときの処理
