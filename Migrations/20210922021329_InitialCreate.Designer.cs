@@ -9,7 +9,7 @@ using MvcMovie.Data;
 namespace MvcMovie.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    [Migration("20210919030341_InitialCreate")]
+    [Migration("20210922021329_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,9 @@ namespace MvcMovie.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Genre")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Rating")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ReleaseDate")

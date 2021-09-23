@@ -25,6 +25,9 @@ namespace MvcMovie.Migrations
                     b.Property<string>("Genre")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Rating")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("TEXT");
 
